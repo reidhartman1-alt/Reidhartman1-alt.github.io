@@ -37,4 +37,59 @@
 <body>
     <h1>AltStore Installer</h1>
 </body>
+</html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltStore Installation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #121212; /* Dark theme to make the button pop */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: white;
+        }
+
+        .install-btn {
+            padding: 18px 35px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, #007aff, #00c6ff);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 122, 255, 0.3);
+        }
+
+        .install-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 5px 10px rgba(0, 122, 255, 0.2);
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The itms-services link goes in the href below -->
+    <a href="itms-services://?action=download-manifest&url=https://github.com/reidhartman1-alt/Altstore-for-my-GitHub/raw/refs/heads/main/appdb.ipa" class="install-btn">
+        Install AltStore
+    </a>
+
+    <p>Tap the button above to begin installation.</p>
+
+</body>
 </html>
+
