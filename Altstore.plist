@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>assets</key>
+            <array>
+                <dict>
+                    <key>kind</key>
+                    <string>software-package<https://github.com/reidhartman1-alt/Altstore-for-my-GitHub/raw/refs/heads/main/appdb.ipa>
+                    <string></string>
+                </dict>
+            </array>
+            <key>metadata</key>
+            <dict>
+                <key>bundle-identifier</key>
+                <string>it.ned.appdb-ios</string>
+                <key>bundle-version</key>
+                <string>1.1.5</string>
+                <key>kind</key>
+                <string>software</string>
+                <key>title</key>
+                <string>AltStore</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
