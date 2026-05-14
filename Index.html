@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AltStore Installer</title>
     <style>
+        /* Rainbow Animation Logic */
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column; /* Stack text and button vertically */
             justify-content: center;
             align-items: center;
-            /* Rainbow Gradient */
             background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
             background-size: 1800% 1800%;
-            /* Animation */
             animation: rainbow 18s ease infinite;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-align: center;
         }
 
         @keyframes rainbow {
@@ -28,68 +29,55 @@
 
         h1 {
             color: white;
-            font-size: 4rem;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 0px 4px 10px rgba(0,0,0,0.2);
             font-weight: 800;
         }
-    </style>
-</head>
-<body>
-    <h1>AltStore Installer</h1>
-</body>
-</html><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AltStore Installation</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #121212; /* Dark theme to make the button pop */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: white;
-        }
 
+        /* The Install Button */
         .install-btn {
-            padding: 18px 35px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: white;
-            background: linear-gradient(135deg, #007aff, #00c6ff);
+            padding: 20px 50px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+            background: white;
             border: none;
-            border-radius: 12px;
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0, 122, 255, 0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .install-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            background: #f8f8f8;
         }
 
         .install-btn:active {
-            transform: scale(0.95);
-            box-shadow: 0 5px 10px rgba(0, 122, 255, 0.2);
+            transform: translateY(1px);
         }
 
         p {
+            color: white;
             margin-top: 20px;
-            font-size: 0.9rem;
-            opacity: 0.7;
+            font-weight: 500;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <!-- The itms-services link goes in the href below -->
+    <h1>AltStore Installer</h1>
+
+    <!-- Replace the URL after 'url=' with your actual .plist link -->
     <a href="itms-services://?action=download-manifest&url=https://github.com/reidhartman1-alt/Altstore-for-my-GitHub/raw/refs/heads/main/appdb.ipa" class="install-btn">
-        Install AltStore
+        Install Now
     </a>
 
-    <p>Tap the button above to begin installation.</p>
+    <p>Tap to begin OTA Installation</p>
 
 </body>
 </html>
-
